@@ -1,0 +1,211 @@
+
+
+body{
+	color:#1992cf;
+	text-align: center;
+}
+
+
+
+section {
+        margin-top: 170px;
+    }
+    
+    header {
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        left: 0%;
+    }
+    
+    .cabecera {
+        font: 13px sans-serif;
+    }
+    
+    .cabecera .cabecera-separacion {
+        max-width: 1200px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .cabecera h1 {
+        float: left;
+        font: normal 28px sans-serif;
+        line-height: 40px;
+        margin: 0;
+    }
+    
+    .cabecera h1 span {
+        color: lightblue;
+    }
+
+
+    
+    .cabecera .cabecera1 {
+        background-color: #0f8fd9;
+        box-shadow: 0 1px 1px #ccc;
+        padding: 20px 40px;
+        height: 80px;
+        color: #ffffff;
+        box-sizing: border-box;
+    }
+    
+    .cabecera .cabecera1 a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .cabecera .cabecera1 nav {
+        font: 14px sans-serif;
+        line-height: 40px;
+        float: left;
+        margin: 0 0 0 60px;
+        padding: 0;
+    }
+    
+    .cabecera .cabecera1 nav a {
+        display: inline-block;
+        padding: 0 10px;
+        opacity: 0.9;
+        text-decoration: none;
+        line-height: 1;
+        transition: 0.5s;
+    }
+    
+    .cabecera .cabecera1 nav a:hover {
+        opacity: 1;
+        border-radius: 2px;
+        background-color: lightblue;
+        padding: 8px 12px;
+    }
+    
+    .cabecera .cabecera1 nav a.activo {
+        border-radius: 2px;
+        background-color: lightblue;
+        padding: 8px 12px;
+    }
+    
+    button {
+        text-decoration: none;
+        font-family: serif;
+        text-transform: uppercase;
+        color: white;
+        background-color: lightblue;
+    }
+    
+    button:hover{
+        color: black;
+        background-color: lightblue;
+        text-decoration: none;
+    }
+    
+  
+    
+    @media all and (max-width: 780px) {
+        .cabecera .cabecera1 {
+            padding: 20px 0;
+        }
+        .cabecera .cabecera1 h1 {
+            float: none;
+            margin: -8px 0 2px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 1;
+        }
+        .cabecera .cabecera1 nav {
+            margin: 0;
+            float: none;
+            font-size: 13px;
+        }
+        .cabecera .cabecera1 nav a.activo {
+            padding: 5px 8px;
+        }
+        .cabecera .cabecera2 {
+            padding: 20px 0;
+        }
+        .busqueda,i,button,input[type=search] {
+            float: none;
+            margin: 0 0 12px;
+        }
+       
+        section {
+            margin-top: 330px;
+        }
+    }
+    
+    
+a{
+    color: white;
+}
+    footer {
+        background-color:#698583;
+        box-shadow: 0 1px 1px blue;
+        padding: 20px 20px;
+        height: 60px;
+        color: white;
+        box-sizing: border-box;
+        bottom: 0%;
+    }
+    
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    
+    div>a {
+        text-decoration: none;
+    }
+
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+        color: #1992cf;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        grid-template-areas: "grid-item-1 grid-item-2 grid-item-3" 
+                             "grid-item-4 grid-item-5 grid-item-6";
+    }
+    
+    div[class^="grid-item"] {
+        padding: 40px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .grid-item-1 {
+        grid-area: grid-item-1;
+    }
+    
+    .grid-item-2 {
+        grid-area:  grid-item-2;
+    }
+    
+    .grid-item-3 {
+        grid-area:  grid-item-3;
+    }
+    
+    .grid-item-4 {
+        grid-area:  grid-item-4;
+    }
+    
+    .grid-item-5 {
+        grid-area:  grid-item-5;
+    }
+    
+    .grid-item-6 {
+        grid-area:  grid-item-6;
+    }
+   
+    
+    @media all and (max-width: 1100px) {
+        .grid-container {
+            grid-template-areas:  "grid-item-1 grid-item-1 grid-item-1" "grid-item-4 grid-item-4 grid-item-4"  
+                                       "grid-item-2 grid-item-2 grid-item-2" "grid-item-5 grid-item-5 grid-item-5" 
+                                       "grid-item-3 grid-item-3 grid-item-3" "grid-item-6 grid-item-6 grid-item-6";
+        }
+    }
+
