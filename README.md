@@ -1,1 +1,0 @@
-# manualba.github.io
