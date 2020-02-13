@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <title>Vuelos·Manolo'sTravel</title>
+  </head>
+  <body>
+    <!--
+      HEADER
+      HEADER
+      HEADER
+      HEADER
+      HEADER
+      HEADER
+      HEADER
+      HEADER
+      HEADER
+      HEADER
+      HEADER
+      HEADER
+      HEADER
+    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+      <a class="navbar-brand" href="#"><span class="text-info">Manolo's</span>Travel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-info" href="vuelos.html">Vuelos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hoteles.html">Hoteles</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Alquiler
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="alquiler.html">Coches</a>
+              <a class="dropdown-item" href="alquiler.html">Motos</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar vuelos..." aria-label="Search" id="buscador">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+
+     <div id="relog">
+        <form class="form-inline my-2 my-lg-0">
+          <div id="register">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Register</button>
+        </div>
+        <div id="login">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Login</button>
+        </div>
+        </div>
+    </nav>
+    <!--
+      BODY
+      BODY
+      BODY
+      BODY
+      BODY
+      BODY
+      BODY
+      BODY
+      BODY
+      BODY
+      BODY
+      BODY
+      BODY
+    -->
+    
+    <div class="row text-center pb-4">
+      <div class="jumbotron bg-info container-lg mt-3 text-light" id="jumbotron">
+            <h1>VUELOS</h1>
+      </div>
+    </div>
+
+    <div class="row text-center pb-4">
+  
+    <div class="container-lg mt-3 " id="contenido">
+        <div class="card-deck">
+          <div class="card">
+            <div class="text-info border">APARTADO&nbsp;DE&nbsp;VUELOS</div>
+            <div class="card-body bg-light">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputSalida">Salida</label>
+                    <input type="email" class="form-control" id="inputSalida" placeholder="Sevilla, España...">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputDestino">Destino</label>
+                    <input type="text" class="form-control" id="inputDestino" placeholder="New York, Estados Unidos...">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputIda">Ida</label>
+                    <input class="form-control" type="date" value="2020-02-07" id="example-date-input">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputVuelta">Vuelta</label>
+                    <input class="form-control" type="date" value="2020-02-15" id="example-date-input">
+                  </div>
+                </div>
+                <div class="form-row">
+
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Tipo</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>--Selecciona--</option>
+                      <option>Vuelo economico</option>
+                      <option>Vuelo business</option>
+                      <option>Primera clase</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputNumP">Nº Personas</label>
+                    <select id="inputNumP" class="form-control">
+                      <option selected>--</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5 o más</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Aprueba los términos.
+                    </label>
+                  </div>
+                </div>
+              <form>
+                <button type="submit" class="btn btn-primary" title="Popover dice: ¿Desea continuar?" data-toggle="popover" data-trigger="hover" data-content="¿Desea continuar?">Buscar mejores ofertas</button>
+
+                <!--SCRIPT DEL POPOVER-->
+                <script>
+                  $(document).ready(function(){
+                      $('[data-toggle="popover"]').popover();   
+                  });
+                  </script>
+                  
+              </form>
+            </div>
+          </div>
+          <div class="card">
+            <div class="text-info border">MÉTODO&nbsp;DE&nbsp;PAGO</div>
+            <div class="card-body bg-light">
+              <form>
+                <div class="form-group owner">
+                    <label for="owner">Propietario</label>
+                    <input type="text" class="form-control" id="owner">
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Tarjeta de credito</label>
+                    <input type="text" class="form-control" id="cardNumber">
+                </div>
+                <div class="form-group CVV" id="card-number-field">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv">
+                </div>
+                <div class="form-group" id="expiration-date">
+                    <label>Fecha de expiración:&nbsp;</label>
+                    <select>
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero </option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    <select>
+                        <option value="19"> 2019</option>
+                        <option value="20"> 2020</option>
+                        <option value="21"> 2021</option>
+                        <option value="22"> 2022</option>
+                        <option value="23"> 2023</option>
+                        <option value="24"> 2024</option>
+                        <option value="25"> 2025</option>
+                    </select>
+                </div>
+                <div class="form-group" id="pay-now">
+                <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Confirmar
+              </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">DATOS BANCARIOS</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ¿Quieres guardar tus datos?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Guardar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </form>              
+          </div>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+
+      
+
+<!--EMBED VIDEO-->
+<div class="form-group col-md-12">
+
+    <div class="media text-center pb-4">
+        <div class="container-lg mt-3 text-info">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/dPZEUEddrlY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+  
+  </div>
+     
+  <div class="container-lg mt-3 " id="contenido">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#!">Previous video</a></li>
+      <li class="page-item"><a class="page-link" href="#!">1</a></li>
+      <li class="page-item"><a class="page-link" href="#!">2</a></li>
+      <li class="page-item"><a class="page-link" href="#!">3</a></li>
+      <li class="page-item"><a class="page-link" href="#!">Next video</a></li>
+    </ul>
+  </nav>
+  </div>
+  
+    
+    <!--
+      FOOTER
+      FOOTER
+      FOOTER
+      FOOTER
+      FOOTER
+      FOOTER
+      FOOTER
+      FOOTER
+      FOOTER
+      FOOTER
+      FOOTER
+      FOOTER
+      FOOTER
+    -->
+
+    <footer class="page-footer font-small mdb-color pt-4 bg-info" id="footer">
+
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+    
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Nombre de la compañia</h6>
+            <p>El nombre de la compañia proviene del nombre del creador
+               junto a lo que se dedica esta empresa.
+            </p>
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="w-100 clearfix d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Navegación</h6>
+            <p>
+              <a href="index.html">Inicio</a>
+            </p>
+            <p>
+              <a href="vuelos.html">Vuelos</a>
+            </p>
+            <p>
+              <a href="hoteles.html">Hoteles</a>
+            </p>
+            <p>
+              <a href="alquiler.html">Alquiler</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="w-100 clearfix d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Tu cuenta</h6>
+            <p>
+              <a href="#!" data-toggle="tooltip" data-placement="right" title="Edita tu perfil">Editar perfil</a>
+            </p>
+            <p>
+              <a href="#!" data-toggle="tooltip" data-placement="right" title="Tienes 2 mensajes sin leer">Mensajes</a>
+              <span class="badge badge-danger">2</span>
+            </p>
+            <p>
+              <a href="#!" data-toggle="tooltip" data-placement="right" title="¿Necesitas ayuda?">Ayuda</a>
+            </p>
+          </div>
+    
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+            <p>
+              <i class="fas fa-home mr-3"></i> Av. Turia nº16, Sevilla (España)</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> mahx007@gmail.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 34 662 91 90 02</p>
+            <p>
+              <i class="fas fa-print mr-3"></i> + 34 955 78 73 61</p>
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Footer links -->
+    
+        <hr>
+    
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+    
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8">
+    
+            <!--Copyright-->
+            <p class="text-center text-md-left">© 2020 Copyright:
+              <a href="#">
+                <strong> Manolo'sTravel</strong>
+              </a>
+            </p>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+    
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+    
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+    
+    </footer>
+
+    
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+  
+  
+  </body>
+</html>
